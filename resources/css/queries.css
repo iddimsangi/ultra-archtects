@@ -1,0 +1,56 @@
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+/* CSS */
+    .intro-section {
+	background-size: cover;
+	background-position: center;
+	&, .container .row {
+		height: 100vh;
+		min-height:100%;
+	}
+	&.innerpage {
+		&, .container .row {
+			height:100vh;
+		}
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: #222;
+		opacity: .3;
+		border-bottom-right-radius: 0px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
+	}
+
+	h1 {
+		font-size: 1.5rem;
+		font-weight: 200;
+		color: $white;
+		strong {
+			font-weight: 300;
+		}
+	}
+	.sub-title {
+		
+	}
+	p {
+		color: $white;
+		font-size: 1.1rem;
+		a {
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+}
+    
+}
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
+/* CSS */
+}
