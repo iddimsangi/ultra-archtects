@@ -63,7 +63,8 @@ jQuery(document).ready(function($) {
       e.preventDefault();  
       
     });
-        $('.site-menu').on('click', 'li', function() {
+    
+    $('.site-menu').on('click', 'li', function() {
     $('.site-menu li.active').removeClass('active');
     $(this).addClass('active');
 });
