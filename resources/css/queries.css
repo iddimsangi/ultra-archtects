@@ -1,11 +1,46 @@
-@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait){
 /* CSS */
+   .header-top > .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  .intro-section h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 300px;
+    }
+ .quote-form-wrap {
+  background: #09162a;
+  padding: 2rem;
+  }
+  .hero-slide .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    }
+    .section-subtitle {
+	font-weight: 200;
+	color: $primary;
+	text-transform: uppercase;
+	font-size:1rem;
+}
+    .section-title {
+	color: $white;
+	font-weight: 200;
+	strong {
+		font-weight: 500;
+	}
+}
     .intro-section {
 	background-size: cover;
 	background-position: center;
 	&, .container .row {
 		height: 100vh;
-		min-height:100%;
+		min-height:70%;
 	}
 	&.innerpage {
 		&, .container .row {
@@ -48,9 +83,21 @@
 		}
 	}
 }
+/*
+.intro-section, .intro-section .container .row {
+    height: 100vh;
+     min-height: 700px; 
+    }
     
+*/
 }
 
-@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
-/* CSS */
-}
+/*
+@media screen and (min-width: 320px) and (max-width: 480px), (min-device-width: 320px) and
+(max-device-width: 480px) and (orientation : landscape) {
+ CSS 
+     .header-top > .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+}*/
